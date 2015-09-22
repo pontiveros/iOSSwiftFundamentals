@@ -10,7 +10,12 @@ import UIKit
 
 class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let items : NSDictionary = {"Networking":"openNetworkVC", "UIWebKit":"openWebKit", "":"", "":"", "":"", "":""}
+    let items : NSDictionary = ["Networking" : "openNetworkVC",
+                                  "UIWebKit" : "openWebKit",
+                             "Files And I/O" : "openFilesAndIO",
+                            "Multithreading" : "openMultithreading",
+                   "UIViews and Transitions" : "openViewAndTransitions",
+                          "Core Data Sample" : "openCoreDataSample"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,24 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let key   = self.items.allKeys[indexPath.row] as? String
+        let value : String = (self.items.objectForKey(key!) as? String)!
+        let performFunction = NSSelectorFromString(value)
+        
+        if (self.respondsToSelector(performFunction)) {
+            self.performSelector(performFunction)
+        } else {
+            print("Function not found")
+        }
+    }
+    
+    func openNetworkVC() {
+        let vc = NetworkVC(nibName: "NetworkView", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         print("didSelectRowAtIndexPath")
     }
@@ -41,7 +64,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         let row = indexPath.row
-        cell!.textLabel?.text = self.items[row]
+        cell!.textLabel?.text = self.items.allKeys[row] as? String
 
         return cell!
     }

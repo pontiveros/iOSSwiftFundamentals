@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4BC7FE1BB0D9DF000C249A /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */; };
+		1C4BC8001BB0DA0C000C249A /* NetworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */; };
 		1C61E1C31BB0A39400594E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61E1C21BB0A39400594E9C /* AppDelegate.swift */; };
 		1C61E1C51BB0A39400594E9C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61E1C41BB0A39400594E9C /* RootViewController.swift */; };
 		1C61E1C81BB0A39400594E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C61E1C61BB0A39400594E9C /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
+		1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkView.xib; sourceTree = "<group>"; };
 		1C61E1BF1BB0A39400594E9C /* iOSSwiftFundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwiftFundamentals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C61E1C21BB0A39400594E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C61E1C41BB0A39400594E9C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				1C61E1CE1BB0A39400594E9C /* LaunchScreen.storyboard */,
 				1C61E1D11BB0A39400594E9C /* Info.plist */,
 				1C61E1C91BB0A39400594E9C /* iOSSwiftFundamentals.xcdatamodeld */,
+				1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */,
+				1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */,
 			);
 			path = iOSSwiftFundamentals;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C61E1D01BB0A39400594E9C /* LaunchScreen.storyboard in Resources */,
+				1C4BC8001BB0DA0C000C249A /* NetworkView.xib in Resources */,
 				1C61E1CD1BB0A39400594E9C /* Assets.xcassets in Resources */,
 				1C61E1C81BB0A39400594E9C /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C61E1C51BB0A39400594E9C /* RootViewController.swift in Sources */,
+				1C4BC7FE1BB0D9DF000C249A /* NetworkVC.swift in Sources */,
 				1C61E1CB1BB0A39400594E9C /* iOSSwiftFundamentals.xcdatamodeld in Sources */,
 				1C61E1C31BB0A39400594E9C /* AppDelegate.swift in Sources */,
 			);
@@ -489,6 +497,7 @@
 				1C61E1EC1BB0A39400594E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C61E1ED1BB0A39400594E9C /* Build configuration list for PBXNativeTarget "iOSSwiftFundamentalsTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +506,7 @@
 				1C61E1EF1BB0A39400594E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C61E1F01BB0A39400594E9C /* Build configuration list for PBXNativeTarget "iOSSwiftFundamentalsUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +515,7 @@
 				1C61E1F21BB0A39400594E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
