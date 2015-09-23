@@ -13,6 +13,16 @@ class NetworkVC : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Network"
+        self.title = "Networking"
+    }
+    
+    @IBAction func onTouchPing(sender: AnyObject) {
+        let vc = UploadImageVC(nibName:"UploadImageView" , bundle:nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func onTouchUploadImage(sender: AnyObject) {
+        let picker = PickerImageHelper(viewController: self)
+        picker.selectImageWithCompletionHandler()
     }
 }

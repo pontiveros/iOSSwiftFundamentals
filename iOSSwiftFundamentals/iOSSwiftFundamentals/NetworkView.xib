@@ -14,8 +14,52 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgG-mH-TLj">
+                    <rect key="frame" x="167" y="86" width="267" height="40"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="267" id="ibM-d5-aUt"/>
+                        <constraint firstAttribute="height" constant="40" id="rDw-kd-bQb"/>
+                    </constraints>
+                    <state key="normal" title="Ping"/>
+                    <connections>
+                        <action selector="onTouchPing:" destination="-1" eventType="touchUpInside" id="rZw-Cg-qxh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqd-rm-nRc">
+                    <rect key="frame" x="167" y="143" width="267" height="40"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="s4q-i4-sxf"/>
+                    </constraints>
+                    <state key="normal" title="Upload Image by NSURLSession"/>
+                    <connections>
+                        <action selector="onTouchUploadImage:" destination="-1" eventType="touchUpInside" id="dIR-TY-tet"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1w-Ma-Zok">
+                    <rect key="frame" x="167" y="200" width="267" height="40"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="OVy-5n-1QT"/>
+                    </constraints>
+                    <state key="normal" title="Download Image by "/>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="413" y="145"/>
+            <constraints>
+                <constraint firstItem="LgG-mH-TLj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I5N-8J-sbU"/>
+                <constraint firstItem="L1w-Ma-Zok" firstAttribute="leading" secondItem="Pqd-rm-nRc" secondAttribute="leading" id="Myp-SB-MIi"/>
+                <constraint firstItem="LgG-mH-TLj" firstAttribute="trailing" secondItem="Pqd-rm-nRc" secondAttribute="trailing" id="S6Z-0P-dRR"/>
+                <constraint firstItem="L1w-Ma-Zok" firstAttribute="top" secondItem="Pqd-rm-nRc" secondAttribute="bottom" constant="17" id="ZGU-h0-JuT"/>
+                <constraint firstItem="LgG-mH-TLj" firstAttribute="leading" secondItem="Pqd-rm-nRc" secondAttribute="leading" id="crh-OJ-V4k"/>
+                <constraint firstItem="LgG-mH-TLj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="86" id="dZF-Mr-zJn"/>
+                <constraint firstItem="Pqd-rm-nRc" firstAttribute="trailing" secondItem="L1w-Ma-Zok" secondAttribute="trailing" id="pni-LH-rKB"/>
+                <constraint firstItem="Pqd-rm-nRc" firstAttribute="top" secondItem="LgG-mH-TLj" secondAttribute="bottom" constant="17" id="q3X-CX-9XV"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="267" y="-69"/>
         </view>
     </objects>
 </document>

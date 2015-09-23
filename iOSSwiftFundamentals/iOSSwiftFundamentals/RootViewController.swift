@@ -10,6 +10,8 @@ import UIKit
 
 class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    let identifierCell = "CellStatic"
+    
     let items : NSDictionary = ["Networking" : "openNetworkVC",
                                   "UIWebKit" : "openWebKit",
                              "Files And I/O" : "openFilesAndIO",
@@ -37,6 +39,14 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         if (self.respondsToSelector(performFunction)) {
             self.performSelector(performFunction)
         } else {
+            let alert = UIAlertController(title: "ERROR",
+                                        message: "The \(key) functionality has not been implemented.",
+                                preferredStyle: UIAlertControllerStyle.Alert)
+            
+            let action = UIAlertAction(title: "Accept", style: UIAlertActionStyle.Cancel, handler: nil)
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
             print("Function not found")
         }
     }
@@ -46,8 +56,14 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        print("didSelectRowAtIndexPath")
+    func openMultithreading() {
+        let vc = MultithreadVC(nibName: "MultithreadView", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func openWebKit() {
+        let vc = WebKitVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,12 +71,10 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let identifier = "CellStatic"
-        
-        var cell = tableView.dequeueReusableCellWithIdentifier(identifier)
+        var cell = tableView.dequeueReusableCellWithIdentifier(self.identifierCell)
         
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: self.identifierCell)
         }
         
         let row = indexPath.row

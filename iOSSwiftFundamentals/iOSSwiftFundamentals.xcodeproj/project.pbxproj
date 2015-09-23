@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C4BC7FE1BB0D9DF000C249A /* NetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */; };
 		1C4BC8001BB0DA0C000C249A /* NetworkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */; };
+		1C4BC8021BB0E3CD000C249A /* MultithreadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4BC8011BB0E3CD000C249A /* MultithreadVC.swift */; };
+		1C4BC8051BB0E3F6000C249A /* MultithreadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4BC8041BB0E3F6000C249A /* MultithreadView.xib */; };
+		1C4BC8071BB0ECBC000C249A /* WebKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4BC8061BB0ECBC000C249A /* WebKitVC.swift */; };
+		1C4BC80B1BB0EF32000C249A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4BC80A1BB0EF32000C249A /* WebKit.framework */; };
 		1C61E1C31BB0A39400594E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61E1C21BB0A39400594E9C /* AppDelegate.swift */; };
 		1C61E1C51BB0A39400594E9C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61E1C41BB0A39400594E9C /* RootViewController.swift */; };
 		1C61E1C81BB0A39400594E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C61E1C61BB0A39400594E9C /* Main.storyboard */; };
@@ -17,6 +21,9 @@
 		1C61E1D01BB0A39400594E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C61E1CE1BB0A39400594E9C /* LaunchScreen.storyboard */; };
 		1C61E1DB1BB0A39400594E9C /* iOSSwiftFundamentalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61E1DA1BB0A39400594E9C /* iOSSwiftFundamentalsTests.swift */; };
 		1C61E1E61BB0A39400594E9C /* iOSSwiftFundamentalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61E1E51BB0A39400594E9C /* iOSSwiftFundamentalsUITests.swift */; };
+		1C9777FC1BB2303400F0F391 /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9777FB1BB2303400F0F391 /* UploadImageVC.swift */; };
+		1C9777FE1BB2304F00F0F391 /* UploadImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9777FD1BB2304F00F0F391 /* UploadImageView.xib */; };
+		1C9778001BB2322100F0F391 /* PickerImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,10 @@
 /* Begin PBXFileReference section */
 		1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkVC.swift; sourceTree = "<group>"; };
 		1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkView.xib; sourceTree = "<group>"; };
+		1C4BC8011BB0E3CD000C249A /* MultithreadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultithreadVC.swift; sourceTree = "<group>"; };
+		1C4BC8041BB0E3F6000C249A /* MultithreadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultithreadView.xib; sourceTree = "<group>"; };
+		1C4BC8061BB0ECBC000C249A /* WebKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebKitVC.swift; sourceTree = "<group>"; };
+		1C4BC80A1BB0EF32000C249A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1C61E1BF1BB0A39400594E9C /* iOSSwiftFundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwiftFundamentals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C61E1C21BB0A39400594E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C61E1C41BB0A39400594E9C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,9 @@
 		1C61E1E11BB0A39400594E9C /* iOSSwiftFundamentalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSwiftFundamentalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C61E1E51BB0A39400594E9C /* iOSSwiftFundamentalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftFundamentalsUITests.swift; sourceTree = "<group>"; };
 		1C61E1E71BB0A39400594E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C9777FB1BB2303400F0F391 /* UploadImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
+		1C9777FD1BB2304F00F0F391 /* UploadImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageView.xib; sourceTree = "<group>"; };
+		1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4BC80B1BB0EF32000C249A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4BC80C1BB0EF3B000C249A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4BC80A1BB0EF32000C249A /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1C61E1B61BB0A39300594E9C = {
 			isa = PBXGroup;
 			children = (
+				1C4BC80C1BB0EF3B000C249A /* Frameworks */,
 				1C61E1C11BB0A39400594E9C /* iOSSwiftFundamentals */,
 				1C61E1D91BB0A39400594E9C /* iOSSwiftFundamentalsTests */,
 				1C61E1E41BB0A39400594E9C /* iOSSwiftFundamentalsUITests */,
@@ -110,8 +134,11 @@
 				1C61E1CE1BB0A39400594E9C /* LaunchScreen.storyboard */,
 				1C61E1D11BB0A39400594E9C /* Info.plist */,
 				1C61E1C91BB0A39400594E9C /* iOSSwiftFundamentals.xcdatamodeld */,
-				1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */,
-				1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */,
+				1C4BC8011BB0E3CD000C249A /* MultithreadVC.swift */,
+				1C4BC8041BB0E3F6000C249A /* MultithreadView.xib */,
+				1C4BC8061BB0ECBC000C249A /* WebKitVC.swift */,
+				1C9777FA1BB22F5500F0F391 /* Networking */,
+				1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */,
 			);
 			path = iOSSwiftFundamentals;
 			sourceTree = "<group>";
@@ -132,6 +159,17 @@
 				1C61E1E71BB0A39400594E9C /* Info.plist */,
 			);
 			path = iOSSwiftFundamentalsUITests;
+			sourceTree = "<group>";
+		};
+		1C9777FA1BB22F5500F0F391 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1C4BC7FF1BB0DA0C000C249A /* NetworkView.xib */,
+				1C4BC7FD1BB0D9DF000C249A /* NetworkVC.swift */,
+				1C9777FB1BB2303400F0F391 /* UploadImageVC.swift */,
+				1C9777FD1BB2304F00F0F391 /* UploadImageView.xib */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +279,8 @@
 				1C4BC8001BB0DA0C000C249A /* NetworkView.xib in Resources */,
 				1C61E1CD1BB0A39400594E9C /* Assets.xcassets in Resources */,
 				1C61E1C81BB0A39400594E9C /* Main.storyboard in Resources */,
+				1C4BC8051BB0E3F6000C249A /* MultithreadView.xib in Resources */,
+				1C9777FE1BB2304F00F0F391 /* UploadImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4BC8071BB0ECBC000C249A /* WebKitVC.swift in Sources */,
 				1C61E1C51BB0A39400594E9C /* RootViewController.swift in Sources */,
+				1C9778001BB2322100F0F391 /* PickerImageHelper.swift in Sources */,
+				1C9777FC1BB2303400F0F391 /* UploadImageVC.swift in Sources */,
 				1C4BC7FE1BB0D9DF000C249A /* NetworkVC.swift in Sources */,
+				1C4BC8021BB0E3CD000C249A /* MultithreadVC.swift in Sources */,
 				1C61E1CB1BB0A39400594E9C /* iOSSwiftFundamentals.xcdatamodeld in Sources */,
 				1C61E1C31BB0A39400594E9C /* AppDelegate.swift in Sources */,
 			);
