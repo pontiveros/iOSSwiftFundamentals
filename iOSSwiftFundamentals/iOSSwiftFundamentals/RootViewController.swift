@@ -17,71 +17,74 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
                              "Files And I/O" : "openFilesAndIO",
                             "Multithreading" : "openMultithreading",
                    "UIViews and Transitions" : "openViewAndTransitions",
-                          "Core Data Sample" : "openCoreDataSample"]
+                          "Core Data Sample" : "openCoreDataSample"];
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.title = "iOS Swift Fundamentals"
+        self.title = "iOS Swift Fundamentals";
     }
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        super.didReceiveMemoryWarning();
         // Dispose of any resources that can be recreated.
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let key   = self.items.allKeys[indexPath.row] as? String
-        let value : String = (self.items.objectForKey(key!) as? String)!
-        let performFunction = NSSelectorFromString(value)
+        let key   = self.items.allKeys[indexPath.row] as? String;
+        let value : String = (self.items.objectForKey(key!) as? String)!;
+        let performFunction = NSSelectorFromString(value);
         
         if (self.respondsToSelector(performFunction)) {
-            self.performSelector(performFunction)
+            self.performSelector(performFunction);
         } else {
             let alert = UIAlertController(title: "ERROR",
                                         message: "The \(key) functionality has not been implemented.",
-                                preferredStyle: UIAlertControllerStyle.Alert)
+                                 preferredStyle: UIAlertControllerStyle.Alert);
             
-            let action = UIAlertAction(title: "Accept", style: UIAlertActionStyle.Cancel, handler: nil)
-            alert.addAction(action)
-            self.presentViewController(alert, animated: true, completion: nil)
+            let action = UIAlertAction(title: "Accept", style: UIAlertActionStyle.Cancel, handler: nil);
+            alert.addAction(action);
+            self.presentViewController(alert, animated: true, completion: nil);
             
-            print("Function not found")
+            print("Function not found");
         }
     }
     
     func openNetworkVC() {
-        let vc = NetworkVC(nibName: "NetworkView", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = NetworkVC(nibName: "NetworkView", bundle: nil);
+        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func openMultithreading() {
-        let vc = MultithreadVC(nibName: "MultithreadView", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = MultithreadVC(nibName: "MultithreadView", bundle: nil);
+        self.navigationController?.pushViewController(vc, animated: true);
     }
     
     func openWebKit() {
-        let vc = WebKitVC()
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = WebKitVC();
+        self.navigationController?.pushViewController(vc, animated: true);
+    }
+    
+    func openFilesAndIO() {
+        NSLog("Message from Pedro Ontiveros.");
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        return self.items.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(self.identifierCell)
+        var cell = tableView.dequeueReusableCellWithIdentifier(self.identifierCell);
         
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: self.identifierCell)
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: self.identifierCell);
         }
         
-        let row = indexPath.row
-        cell!.textLabel?.text = self.items.allKeys[row] as? String
+        let row = indexPath.row;
+        cell!.textLabel?.text = self.items.allKeys[row] as? String;
 
-        return cell!
+        return cell!;
     }
-    
 }
 
