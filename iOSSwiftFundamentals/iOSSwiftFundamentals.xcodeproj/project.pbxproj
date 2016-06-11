@@ -239,6 +239,7 @@
 				TargetAttributes = {
 					1C61E1BE1BB0A39300594E9C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = TKH856G5A9;
 					};
 					1C61E1D51BB0A39400594E9C = {
 						CreatedOnToolsVersion = 7.0;
@@ -454,10 +455,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSSwiftFundamentals/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qbxsoft.iOSSwiftFundamentals;
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.mobile.iOSSwiftFundamentals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -466,10 +468,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSSwiftFundamentals/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qbxsoft.iOSSwiftFundamentals;
+				PRODUCT_BUNDLE_IDENTIFIER = com.globant.mobile.iOSSwiftFundamentals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
