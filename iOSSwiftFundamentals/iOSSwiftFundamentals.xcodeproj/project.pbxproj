@@ -24,6 +24,9 @@
 		1C9777FC1BB2303400F0F391 /* UploadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9777FB1BB2303400F0F391 /* UploadImageVC.swift */; };
 		1C9777FE1BB2304F00F0F391 /* UploadImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9777FD1BB2304F00F0F391 /* UploadImageView.xib */; };
 		1C9778001BB2322100F0F391 /* PickerImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */; };
+		DA8A5F971D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */; };
+		DA8A5F981D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */; };
+		DA8A5F991D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,7 @@
 		1C9777FB1BB2303400F0F391 /* UploadImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageVC.swift; sourceTree = "<group>"; };
 		1C9777FD1BB2304F00F0F391 /* UploadImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageView.xib; sourceTree = "<group>"; };
 		1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImageHelper.swift; sourceTree = "<group>"; };
+		DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,11 +138,12 @@
 				1C61E1CE1BB0A39400594E9C /* LaunchScreen.storyboard */,
 				1C61E1D11BB0A39400594E9C /* Info.plist */,
 				1C61E1C91BB0A39400594E9C /* iOSSwiftFundamentals.xcdatamodeld */,
+				DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */,
 				1C4BC8011BB0E3CD000C249A /* MultithreadVC.swift */,
 				1C4BC8041BB0E3F6000C249A /* MultithreadView.xib */,
 				1C4BC8061BB0ECBC000C249A /* WebKitVC.swift */,
-				1C9777FA1BB22F5500F0F391 /* Networking */,
 				1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */,
+				1C9777FA1BB22F5500F0F391 /* Networking */,
 			);
 			path = iOSSwiftFundamentals;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C4BC8071BB0ECBC000C249A /* WebKitVC.swift in Sources */,
+				DA8A5F971D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */,
 				1C61E1C51BB0A39400594E9C /* RootViewController.swift in Sources */,
 				1C9778001BB2322100F0F391 /* PickerImageHelper.swift in Sources */,
 				1C9777FC1BB2303400F0F391 /* UploadImageVC.swift in Sources */,
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C61E1DB1BB0A39400594E9C /* iOSSwiftFundamentalsTests.swift in Sources */,
+				DA8A5F981D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C61E1E61BB0A39400594E9C /* iOSSwiftFundamentalsUITests.swift in Sources */,
+				DA8A5F991D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

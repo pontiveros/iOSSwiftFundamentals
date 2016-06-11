@@ -17,6 +17,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
                              "Files And I/O" : "openFilesAndIO",
                             "Multithreading" : "openMultithreading",
                    "UIViews and Transitions" : "openViewAndTransitions",
+                                "Algorithms" : "openAlgoritmsVC",
                           "Core Data Sample" : "openCoreDataSample"];
     
     override func viewDidLoad() {
@@ -32,7 +33,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let key   = self.items.allKeys[indexPath.row] as? String;
+        let key = self.items.allKeys[indexPath.row] as? String;
         let value : String = (self.items.objectForKey(key!) as? String)!;
         let performFunction = NSSelectorFromString(value);
         
@@ -85,6 +86,12 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell!.textLabel?.text = self.items.allKeys[row] as? String;
 
         return cell!;
+    }
+    
+    func openAlgoritmsVC() -> Void {
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Algorithms")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
