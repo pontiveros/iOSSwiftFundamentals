@@ -27,6 +27,8 @@
 		DA8A5F971D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */; };
 		DA8A5F981D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */; };
 		DA8A5F991D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */; };
+		DAF486F51D120258003D02F1 /* SyntaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF486F31D120258003D02F1 /* SyntaxVC.swift */; };
+		DAF486F81D12055A003D02F1 /* SyntaxVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF486F71D12055A003D02F1 /* SyntaxVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		1C9777FD1BB2304F00F0F391 /* UploadImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageView.xib; sourceTree = "<group>"; };
 		1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImageHelper.swift; sourceTree = "<group>"; };
 		DA8A5F961D0CC5D5006FAAD0 /* AlgorithmsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsVC.swift; sourceTree = "<group>"; };
+		DAF486F31D120258003D02F1 /* SyntaxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntaxVC.swift; sourceTree = "<group>"; };
+		DAF486F71D12055A003D02F1 /* SyntaxVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SyntaxVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				1C4BC8041BB0E3F6000C249A /* MultithreadView.xib */,
 				1C4BC8061BB0ECBC000C249A /* WebKitVC.swift */,
 				1C9777FF1BB2322100F0F391 /* PickerImageHelper.swift */,
+				DAF486F31D120258003D02F1 /* SyntaxVC.swift */,
+				DAF486F71D12055A003D02F1 /* SyntaxVC.xib */,
 				1C9777FA1BB22F5500F0F391 /* Networking */,
 			);
 			path = iOSSwiftFundamentals;
@@ -282,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C61E1D01BB0A39400594E9C /* LaunchScreen.storyboard in Resources */,
+				DAF486F81D12055A003D02F1 /* SyntaxVC.xib in Resources */,
 				1C4BC8001BB0DA0C000C249A /* NetworkView.xib in Resources */,
 				1C61E1CD1BB0A39400594E9C /* Assets.xcassets in Resources */,
 				1C61E1C81BB0A39400594E9C /* Main.storyboard in Resources */,
@@ -311,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF486F51D120258003D02F1 /* SyntaxVC.swift in Sources */,
 				1C4BC8071BB0ECBC000C249A /* WebKitVC.swift in Sources */,
 				DA8A5F971D0CC5D5006FAAD0 /* AlgorithmsVC.swift in Sources */,
 				1C61E1C51BB0A39400594E9C /* RootViewController.swift in Sources */,

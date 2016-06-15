@@ -18,6 +18,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
                             "Multithreading" : "openMultithreading",
                    "UIViews and Transitions" : "openViewAndTransitions",
                                 "Algorithms" : "openAlgoritmsVC",
+                                    "Syntax" : "openSyntaxVC",
                           "Core Data Sample" : "openCoreDataSample"];
     
     override func viewDidLoad() {
@@ -65,6 +66,11 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     func openWebKit() {
         let vc = WebKitVC();
         self.navigationController?.pushViewController(vc, animated: true);
+    }
+    
+    func openSyntaxVC() {
+        let vc = SyntaxVC(nibName: "SyntaxVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func openFilesAndIO() {
